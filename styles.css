@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background-image: url(./images/1401661.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/*--HAMBURGER MENU--*/
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    margin: 4px;
+    background-color: white;
+    transition: all 400ms ease-in-out;
+}
+.hamburger {
+    padding: 25px;
+    cursor: pointer;
+}
+.hamburger:hover {
+    opacity: 0.8;
+}
+.navbar-links {
+    background-color: white;
+    border-radius: 5px;
+    padding: 25px;
+    position: absolute;
+    right: 0;
+    z-index: 100;
+    display: none;
+    transition: all 900ms ease-in-out;
+}
+.display-navlinks {
+    display: grid;
+}
+.navbar-links p {
+    padding-bottom: 10px;
+}
+.nav-links {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 90px);
+    grid-template-rows: repeat(2, 65px);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px; 
+}
+.navbar-links li {
+    display: block;
+}
+.navbar-links img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+.navbar-links img:hover {
+    border: 1px solid red;
+}
+
+
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header h2 {
+    font-size: 35px;
+}
+.date {
+    padding: 25px;
+    color: white;
+}
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 25px;
+}
+form:hover {
+    opacity: 0.9;
+}
+.input-todo {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+.input-todo::placeholder {
+    color: white;
+}
+.input-todo:focus {
+    outline: none;
+}
+.btn-icon {
+    padding: 15px 0px 15px 15px;
+    background-color: white;
+    color: white;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.todo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 5px;
+}
+.todo-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 25px;
+    margin-top: 50px;
+}
+.list-items {
+    background-color: white;
+    list-style: none;
+    padding: 10px;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+
+
+
+
+/*--Button Icons--*/
+.check-btn {
+    cursor: pointer;
+    border: none;
+    background: white;
+    padding: 0px 15px;
+}
+.delete-btn {
+    cursor: pointer;
+    border: none;
+    background: white;
+    padding-right: 15px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.check-btn:hover {
+    color: green;
+}
+.delete-btn:hover {
+    color: red;
+}
+.check-color {
+    color: green;
+}
+.task-complete {
+    text-decoration: line-through;
+}
+.delete-task {
+    display: none;
+}
+
+
+
+/*--Animation--*/
+.fade {
+    opacity: 0.6;
+}
